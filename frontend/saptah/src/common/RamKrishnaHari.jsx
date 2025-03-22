@@ -12,8 +12,9 @@ function RamKrishnaHari(){
         context.font = "1rem sans-serif";  // Match your CSS font
 
         const textWidth = context.measureText(text).width;
-        const repeatCount = Math.ceil(containerWidth / textWidth) + 2;
-        setRepeatedText(text.repeat(repeatCount));
+        const repeatCount = Math.floor(containerWidth / textWidth);
+        const repeated = Array.from({ length: repeatCount }, () => text).join("");
+        setRepeatedText(repeated);
     },[])
 
     return(

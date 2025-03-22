@@ -2,14 +2,8 @@
     background-color: yellow;
     width: 100%;
     height: auto; /* adjust the height */
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
-    border-color: black;
-    border-style: solid;
-    border-radius: 1px;
-    border:1px;
+    border:1px solid black;
     align-items: start;
     justify-content:center;
     white-space: nowrap;
